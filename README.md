@@ -1,6 +1,6 @@
 # cascade-carousel
 
-> image sliding made easy
+> Image sliding made easy
 
 [![NPM](https://img.shields.io/npm/v/@thesoftwareacademy.it/carousel)](https://www.npmjs.com/package/@thesoftwareacademy.it/carousel) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
