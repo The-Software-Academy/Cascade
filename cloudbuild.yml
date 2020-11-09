@@ -9,5 +9,3 @@ steps:
         yarn install package.json && \ 
         yarn run test
 
-
-        
