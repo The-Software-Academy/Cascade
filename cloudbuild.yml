@@ -8,3 +8,6 @@ steps:
         yarn upgrade && \
         yarn install package.json && \ 
         yarn run test
+
+
+        
