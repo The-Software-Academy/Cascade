@@ -1,8 +1,8 @@
-# carousel
+# cascade-carousel
 
 > image sliding made easy
 
-[![NPM](https://img.shields.io/npm/v/carousel.svg)](https://www.npmjs.com/package/carousel) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/carousel.svg)](https://www.npmjs.com/package/@thesoftwareacademy.it/carousel) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
