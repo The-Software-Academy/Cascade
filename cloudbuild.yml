@@ -7,5 +7,4 @@ steps:
     - |
         yarn upgrade && \
         yarn install package.json && \ 
-        yarn run test && \
-        yarn build
+        yarn run test
