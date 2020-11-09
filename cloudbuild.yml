@@ -1,5 +1,5 @@
 steps:
-- name: 'gcr.io/academy-images-0/react-builder:latest'
+- name: 'gcr.io/academy-images-0/react-builder:5d7263d7a4321c83724ee6cda6b7df88725a6d7b'
   id: 'run test and create bundle'
   entrypoint: '/bin/sh'
   args:
