@@ -1,1 +1,11 @@
-
+steps:
+- name: 'gcr.io/academy-images-0/react-builder:latest'
+  id: 'run test and create bundle'
+  entrypoint: '/bin/sh'
+  args:
+    - '-c'
+    - |
+        yarn upgrade && \
+        yarn install package.json && \ 
+        yarn run test && \
+        yarn build
