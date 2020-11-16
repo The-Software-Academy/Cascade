@@ -4,10 +4,13 @@
 
 [![NPM](https://img.shields.io/npm/v/@thesoftwareacademy.it/carousel)](https://www.npmjs.com/package/@thesoftwareacademy.it/carousel) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+## :warning: Warning
+The code in this repository is experimental and highly unstable we discourage anyone to use it even for non business critical applications.
+
 ## Install
 
 ```bash
-npm install --save carousel
+npm install --save @thesoftwareacademy.it/carousel
 ```
 
 ## Usage
