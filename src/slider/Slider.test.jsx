@@ -16,7 +16,7 @@
  * ----------	---	----------------------------------------------------------
  */
 
-import { Slider } from './Slider'
+import Slider from './Slider'
 
 describe('Carousel', () => {
   it('is truthy', () => {
