@@ -1,6 +1,6 @@
 // @flow
 /**
- * File: /home/andrea/projects/Degma/ui/src/components/Previewer/Previewer.style.jsx
+ * File: /home/andrea/projects/Degma/ui/src/components/Mosaic/Mosaic.style.jsx
  * Project: /home/andrea/projects/Degma/ui
  * Created Date: Saturday, September 19th 2020, 6:55:51 pm
  * Author: Andrea Gaetano Citrolo
@@ -19,7 +19,7 @@
 import styled from 'styled-components'
 import type { ComponentType } from 'react'
 
-const PreviewerWrapper: ComponentType<any> = styled.div`
+const MosaicWrapper: ComponentType<any> = styled.div`
   max-width: 100% !important;
   display: flex;
   flex-wrap: wrap;
@@ -33,4 +33,4 @@ const PreviewerWrapper: ComponentType<any> = styled.div`
   scrollbar-width: none; */
 `
 
-export default PreviewerWrapper
+export default MosaicWrapper
