@@ -5,7 +5,7 @@
  * Created Date: Tuesday, September 15th 2020, 3:00:54 pm
  * Author: Andrea Gaetano Citrolo
  * -----
- * Last Modified: Sun Nov 15 2020
+ * Last Modified: Mon Nov 16 2020
  * Modified By: Andrea Gaetano Citrolo
  * -----
  * Copyright (c) 2020 The Software Academy ACG
@@ -15,11 +15,10 @@
  * Date      	By	Comments
  * ----------	---	----------------------------------------------------------
  */
-import { Carousel } from './Carousel'
-import Previewer from './previewer/Previewer'
+import Slider from './slider/Slider'
+import Mosaic from './mosaic/Mosaic'
 import LinkCard from './cards/LinkCard'
 
-export { Previewer }
+export { Slider }
 export { LinkCard }
-
-export { Carousel }
+export { Mosaic }
