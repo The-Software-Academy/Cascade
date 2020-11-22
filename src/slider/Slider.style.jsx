@@ -22,4 +22,8 @@ export const SliderContainer = styled.div`
   overflow: auto;
   white-space: nowrap;
   scrollbar-width: none;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
 `
