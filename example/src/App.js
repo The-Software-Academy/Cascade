@@ -5,7 +5,7 @@
  * Created Date: Tuesday, September 15th 2020, 11:43:27 am
  * Author: Andrea Gaetano Citrolo
  * -----
- * Last Modified: Sun Nov 15 2020
+ * Last Modified: Mon Nov 16 2020
  * Modified By: Andrea Gaetano Citrolo
  * -----
  * Copyright (c) 2020 The Software Academy ACG
@@ -18,7 +18,7 @@
 
 import React from 'react'
 
-import { Carousel, LinkCard, Previewer } from 'carousel'
+import { Slider, LinkCard, Mosaic } from 'carousel'
 import { Route } from 'react-router-dom'
 
 import type { LinkCardData } from 'carousel'
@@ -45,15 +45,18 @@ const setImages: (images: Array<any>) => Array<LinkCardData> = (images) =>
 
 const App = () => {
   return (
-    <div>
-      <Carousel>
-        {IMAGES.map((item, index) => (
-          <img src={item} key={index} alt={index.toString()} />
-        ))}
-      </Carousel>
-      <h1> Questo testo non scrollabile non si deve muovere</h1>
-      
-      <Previewer CardComponent={LinkCard} data={setImages(IMAGES)} />
+    <div style={{display:"flex", flexDirection:"column", alignItems:"center"}}>
+      <div style={{width:"1000px"}}>
+        <Slider>
+          {IMAGES.map((item, index) => (
+            <LinkCard text={index} image={item} link={"/"} />
+          ))}
+        </Slider>
+        <h1> Questo testo non scrollabile non si deve muovere</h1>
+      </div>
+      <div style={{width:"80%"}}>
+        <Mosaic CardComponent={LinkCard} data={setImages(IMAGES)} />
+      </div>
     </div>
   )
 }

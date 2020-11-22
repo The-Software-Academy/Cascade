@@ -1,7 +1,7 @@
 // @flow
 /**
- * File: /home/andrea/projects/Cascade/carousel/src/index.test.jsx
- * Project: /home/andrea/projects/Cascade/carousel
+ * File: /home/andrea/projects/Cascade/Slider/src/Slider.style.jsx
+ * Project: /home/andrea/projects/Cascade/Slider
  * Created Date: Tuesday, September 15th 2020, 11:43:27 am
  * Author: Andrea Gaetano Citrolo
  * -----
@@ -16,10 +16,14 @@
  * ----------	---	----------------------------------------------------------
  */
 
-import { Carousel } from './Carousel'
+import styled from 'styled-components'
 
-describe('Carousel', () => {
-  it('is truthy', () => {
-    expect(Carousel).toBeTruthy()
-  })
-})
+export const SliderContainer = styled.div`
+  overflow: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+`

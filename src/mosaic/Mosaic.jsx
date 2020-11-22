@@ -1,6 +1,6 @@
 // @flow
 /**
- * File: /home/andrea/projects/Degma/ui/src/components/Previewer/Previewer.jsx
+ * File: /home/andrea/projects/Degma/ui/src/components/Mosaic/Mosaic.jsx
  * Project: /home/andrea/projects/Degma/ui
  * Created Date: Saturday, September 19th 2020, 6:51:22 pm
  * Author: Andrea Gaetano Citrolo
@@ -17,14 +17,14 @@
  */
 import React, { useState, useEffect } from 'react'
 import type { ComponentType } from 'react'
-import PreviewerWrapper from './Previewer.style'
+import MosaicWrapper from './Mosaic.style'
 
-type PreviewerProps = {
+type MosaicProps = {
   CardComponent: ComponentType<any>,
   data: Array<Object>
 }
 
-const Previewer = ({ CardComponent, data }: PreviewerProps) => {
+const Mosaic = ({ CardComponent, data }: MosaicProps) => {
   const [loadedImagesCounter, setCounter] = useState([])
   useEffect(() => {
     function computeSize(item) {
@@ -45,12 +45,12 @@ const Previewer = ({ CardComponent, data }: PreviewerProps) => {
     }
   }, [loadedImagesCounter, data])
   return (
-    <PreviewerWrapper>
+    <MosaicWrapper>
       {data.map((item) => (
         <CardComponent key={item.key} {...item} /> // eslint-disable-line react/jsx-props-no-spreading
       ))}
-    </PreviewerWrapper>
+    </MosaicWrapper>
   )
 }
 
-export default Previewer
+export default Mosaic
